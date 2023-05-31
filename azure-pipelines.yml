@@ -25,3 +25,8 @@ steps:
     SourceFolder: '$(agent.builddirectory)'
     Contents: '**/.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(Build.ArtifactStagingDirectory)'
+        Contents: '**'
+        TargetFolder: 'Azure Pipelines'
