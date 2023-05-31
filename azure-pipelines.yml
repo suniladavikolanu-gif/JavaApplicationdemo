@@ -28,5 +28,5 @@ steps:
     - task: CopyFiles@2
       inputs:
         SourceFolder: '$(Build.ArtifactStagingDirectory)'
-        Contents: '**'
+        Contents: 'warfile'
         TargetFolder: 'Azure Pipelines'
